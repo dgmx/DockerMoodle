@@ -48,6 +48,23 @@ docker restart moodle-moodle-1
 
 
 ## Otras consideraciones
+
+```diff
+   moodle:
+-    image: bitnami/moodle:latest
++    build: .
+     ports:
+-      - '80:8080'
+-      - '443:8443'
++      - '80:8880'
++      - '443:4443'
+     environment:
+       ...
++      - PHP_MEMORY_LIMIT=512m
+     ...
+```
+
+
 1. El puerto de acceso a Moodle es el 8880 (modificado 80 por defecto)
 2. Se ha expuesto el puerto de MariaDB al 33306 para poder acceder con DBeaver o el cliente MariaDB
 ```console
