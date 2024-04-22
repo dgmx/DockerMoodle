@@ -88,7 +88,7 @@ docker restart moodle-moodle-1
 
 
 1. El puerto de acceso a Moodle es el 8880 (modificado 80 por defecto)
-2. Se ha expuesto el puerto de MariaDB al 33306 para poder acceder con DBeaver o el cliente MariaDB
+2. Se ha expuesto el puerto de MariaDB al 3336 para poder acceder con DBeaver o el cliente MariaDB
 ```console
  mariadb  --protocol=tcp -u root -p -P 3336
 ```
