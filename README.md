@@ -4,6 +4,7 @@ Creación de una plataforma de Formación Moodle con Docker Compose
 > Para la creación de esta plataforma moodle utilizamos las imagenes de bitnami/moodle
 
 [Docker Hub de Bitnami](https://hub.docker.com/r/bitnami/moodle)
+[Github de Bitnami Moodle](https://github.com/bitnami/containers/tree/main/bitnami/moodle)
 
 En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas dos
 
