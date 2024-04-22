@@ -35,11 +35,18 @@ apt update
 apt upgrade
 apt install nano
 ```
-Editamos en archivo
+Editamos el archivo php.ini
 ```console
 nano /opt/bitnami/php/etc/php.ini
-upload_max_filesize = 900M
-post_max_size = 900M
+```
+```diff
+- upload_max_filesize = 40M
+- post_max_size = 40M
++ upload_max_filesize = 900M
++ post_max_size = 900M
+```
+
+
 ```
 Reiniciamos el contenedor de Moodle
 ```console
