@@ -22,9 +22,9 @@ sin contraseñas (cambiar en las opciones del archivo yaml para un sitio en prod
 
 Los archivos de configuración php.ini se encuentran en la carpetas:
 
-/opt/bitnami/php/lib/php.ini
-/opt/bitnami/php/etc/php.ini
-/opt/bitnami/php/etc.default/php.ini
+- /opt/bitnami/php/lib/php.ini
+- /opt/bitnami/php/etc/php.ini
+- /opt/bitnami/php/etc.default/php.ini
 
 Se recomienda cambair las variables upload_max_filesize y post_max_size para ampliar el tamaño de archivo a subir, necesario para importar cursos, por defecto esta a 40M, establecer a 900M
 
