@@ -23,7 +23,7 @@ La base de datos se encuentra si contraseña para root (cambiar en las opciones 
 
 Para los siguientes cambios debemos acceder al contenedor:
 
-```docker
+```console
 docker exec -i -t moodle-moodle-1 /bin/bash
 ```
 
