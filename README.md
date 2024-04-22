@@ -42,6 +42,7 @@ nano /opt/bitnami/php/etc/php.ini
 ```diff
 - upload_max_filesize = 40M
 - post_max_size = 40M
+
 + upload_max_filesize = 900M
 + post_max_size = 900M
 ```
