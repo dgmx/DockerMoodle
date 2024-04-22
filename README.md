@@ -10,7 +10,7 @@ En las variables de entorno tenemos toda la información del sitio, pero cabe de
 * MOODLE_USERNAME 	Moodle user name. 	user
 * MOODLE_PASSWORD 	Moodle user password. 	bitnami
 
-La base de datos tiene la siguioente configuración:
+La base de datos tiene la siguiente configuración:
 
 * MOODLE_DATABASE_USER 	Database user name. 	bn_moodle
 
