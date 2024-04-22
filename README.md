@@ -51,8 +51,6 @@ docker restart moodle-moodle-1
 
 ```diff
    moodle:
--    image: bitnami/moodle:latest
-+    build: .
      ports:
 -      - '80:8080'
 -      - '443:8443'
