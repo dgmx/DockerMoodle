@@ -7,8 +7,10 @@ Creación de una plataforma de Formación Moodle con Docker Compose
 
 En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas dos
 
-* MOODLE_USERNAME 	Moodle user name. 	user
-* MOODLE_PASSWORD 	Moodle user password. 	bitnami
+| Name                          | Description                          | Default Value          |
+|-------------------------------|--------------------------------------|-------------------------
+| `MOODLE_USERNAME`             | Moodle user name.                    | `user`                 |
+| `MOODLE_PASSWORD`             | Moodle user password.                | `bitnami`              |
 
 La base de datos tiene la siguiente configuración:
 
