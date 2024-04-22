@@ -26,19 +26,19 @@ Se recomienda cambair las variables upload_max_filesize y post_max_size para amp
 
 El editor de texto nano no se encuentra instalado, por lo que habrá que hacerlo manualmente:
 
-```
+```console
 apt update
 apt upgrade
 apt install nano
 ```
 Editamos en archivo
-```
+```console
 nano /opt/bitnami/php/etc/php.ini
 upload_max_filesize = 900M
 post_max_size = 900M
 ```
 Reiniciamos el contenedor de Moodle
-```
+```console
 docker restart moodle-moodle-1
 ```
 
@@ -46,7 +46,7 @@ docker restart moodle-moodle-1
 ## Otras consideraciones
 1. El puerto de acceso a Moodle es el 8880 (modificado 80 por defecto)
 2. Se ha expuesto el puerto de MariaDB al 33306 para poder acceder con DBeaver o el cliente MariaDB
-```
+```console
  mariadb  --protocol=tcp -u root -p -P 3336
 ```
 
