@@ -96,6 +96,26 @@ curl -sSL https://raw.githubusercontent.com/dgmx/DockerMoodle/main/docker-compos
 docker-compose up -d
 ```
 
+### Pendiente
+
+Configurar un Servidor STMP para notificaciones o recordar contraseñas
+
+* Modificacion en el archivo docker-compose.yml
+
+  ```yaml
+  moodle:
+    ...
+    environment:
+      - MOODLE_DATABASE_USER=bn_moodle
+      - MOODLE_DATABASE_NAME=bitnami_moodle
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MOODLE_SMTP_HOST=smtp.gmail.com
+      - MOODLE_SMTP_PORT=587
+      - MOODLE_SMTP_USER=your_email@gmail.com
+      - MOODLE_SMTP_PASSWORD=your_password
+      - MOODLE_SMTP_PROTOCOL=tls
+  ...
+  ```
 
 
 
