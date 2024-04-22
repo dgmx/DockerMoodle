@@ -19,9 +19,15 @@ En las variables de entorno tenemos toda la información del sitio, pero cabe de
 | `MOODLE_DATABASE_USER`        | Database user name.                                     | `bn_moodle`                        |
 | `MOODLE_DATABASE_PASSWORD`    | Database user password.                                 | `nil`                              |
 
-sin contraseñas (cambiar en las opciones del archivo yaml para un sitio en producción)
+La base de datos se encuentra si contraseña para root (cambiar en las opciones del archivo yaml para un sitio en producción)
 
-Los archivos de configuración php.ini se encuentran en la carpetas:
+Para los siguientes cambios debemos acceder al contenedor:
+
+```docker
+docker exec -i -t moodle-moodle-1 /bin/bash
+```
+
+Los archivos de configuración php.ini se encuentran en la carpetas del contenedor:
 
 - /opt/bitnami/php/lib/php.ini
 - /opt/bitnami/php/etc/php.ini
