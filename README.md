@@ -128,6 +128,8 @@ Configurar un Servidor STMP con Gmail para notificaciones o recordar contraseña
       - MOODLE_SMTP_PROTOCOL=tls
   ...
   ```
+
+### Resultado Final
 ![Captura de Pantalla](https://github.com/dgmx/DockerMoodle/blob/main/images/Captura%20de%20pantalla%202024-04-22%20a%20las%2012.00.28.png)
 
 
