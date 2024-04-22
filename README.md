@@ -6,18 +6,18 @@ Creación de una plataforma de Formación Moodle con Docker Compose
 - [Docker Hub de Bitnami](https://hub.docker.com/r/bitnami/moodle)
 - [Github de Bitnami Moodle](https://github.com/bitnami/containers/tree/main/bitnami/moodle)
 
-En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas dos
+En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas las siguientes
 
 | Name                          | Description                                             | Default Value          |
 |-------------------------------|---------------------------------------------------------|-------------------------
 | `MOODLE_USERNAME`             | Moodle user name.                                       | `user`                 |
 | `MOODLE_PASSWORD`             | Moodle user password.                                   | `bitnami`              |
 | `MOODLE_DATABASE_TYPE`        | Database type to be used for the Moodle installation.   | `mariadb`              |
-| `MOODLE_DATABASE_HOST`        | Database server host.                                   | `mariadb`                          |
-| `MOODLE_DATABASE_PORT_NUMBER` | Database server port.                                   | `3306`                             |
-| `MOODLE_DATABASE_NAME`        | Database name.                                          | `bitnami_moodle`                   |
-| `MOODLE_DATABASE_USER`        | Database user name.                                     | `bn_moodle`                        |
-| `MOODLE_DATABASE_PASSWORD`    | Database user password.                                 | `nil`                              |
+| `MOODLE_DATABASE_HOST`        | Database server host.                                   | `mariadb`              |
+| `MOODLE_DATABASE_PORT_NUMBER` | Database server port.                                   | `3306`                 |
+| `MOODLE_DATABASE_NAME`        | Database name.                                          | `bitnami_moodle`       |
+| `MOODLE_DATABASE_USER`        | Database user name.                                     | `bn_moodle`            |
+| `MOODLE_DATABASE_PASSWORD`    | Database user password.                                 | `nil`                  |
 
 La base de datos se encuentra si contraseña para root (cambiar en las opciones del archivo yaml para un sitio en producción)
 
