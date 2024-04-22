@@ -38,14 +38,13 @@ Para los siguientes cambios debemos acceder al contenedor:
 ```console
 docker exec -i -t moodle-moodle-1 /bin/bash
 ```
+Se recomienda cambiar las variables upload_max_filesize y post_max_size para ampliar el tamaño de archivo a subir, necesario para importar cursos, por defecto esta a 40M, establecer a 900M
 
 Los archivos de configuración php.ini se encuentran en la carpetas del contenedor:
 
 - /opt/bitnami/php/lib/php.ini
 - /opt/bitnami/php/etc/php.ini
 - /opt/bitnami/php/etc.default/php.ini
-
-Se recomienda cambair las variables upload_max_filesize y post_max_size para ampliar el tamaño de archivo a subir, necesario para importar cursos, por defecto esta a 40M, establecer a 900M
 
 El editor de texto nano no se encuentra instalado, por lo que habrá que hacerlo manualmente:
 
