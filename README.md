@@ -6,7 +6,7 @@ Creación de una plataforma de Formación Moodle con Docker Compose
 - [Docker Hub de Bitnami](https://hub.docker.com/r/bitnami/moodle)
 - [Github de Bitnami Moodle](https://github.com/bitnami/containers/tree/main/bitnami/moodle)
 
-En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas las siguientes
+En las variables de entorno tenemos toda la información del sitio, pero cabe destacar estas las siguientes:
 
 | Name                          | Description                                             | Default Value          |
 |-------------------------------|---------------------------------------------------------|-------------------------
@@ -19,9 +19,9 @@ En las variables de entorno tenemos toda la información del sitio, pero cabe de
 | `MOODLE_DATABASE_USER`        | Database user name.                                     | `bn_moodle`            |
 | `MOODLE_DATABASE_PASSWORD`    | Database user password.                                 | `nil`                  |
 
-La base de datos se encuentra si contraseña para root (cambiar en las opciones del archivo yaml para un sitio en producción)
+La base de datos se encuentra sin contraseña para root (cambiar en las opciones del archivo yaml para un sitio en producción)
 
-Podemos realizar cambios a estas variables simplememnt indicandolo en el archivo docker-complose.yaml como variables de entorno:
+Podemos realizar cambios a estas variables simplemente indicandolo en el archivo docker-complose.yaml como variables de entorno:
 
 
 ```yaml
@@ -32,7 +32,7 @@ moodle:
     - MOODLE_PASSWORD=my_password
   ...
 ```
-
+### Modificaciones de las variables de configuración del Contenedor
 Para los siguientes cambios debemos acceder al contenedor:
 
 ```console
