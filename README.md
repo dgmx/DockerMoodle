@@ -92,6 +92,7 @@ docker restart moodle-moodle-1
 ```console
  mariadb  --protocol=tcp -u root -p -P 3336
 ```
+### Puesta en marcha del Stock
 
 Simplemente descargamos el archivo docker-compose.yaml a una carpeta llamada moodle y lo lanzamos
 ```console
