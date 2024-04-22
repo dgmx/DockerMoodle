@@ -54,7 +54,7 @@ nano /opt/bitnami/php/etc/php.ini
 + post_max_size = 900M
 ```
 
-Reiniciamos el contenedor de Moodle
+Salimos del contenedor y lo reiniciamos:
 ```console
 docker restart moodle-moodle-1
 ```
