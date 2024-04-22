@@ -21,6 +21,18 @@ En las variables de entorno tenemos toda la información del sitio, pero cabe de
 
 La base de datos se encuentra si contraseña para root (cambiar en las opciones del archivo yaml para un sitio en producción)
 
+Podemos realizar cambios a estas variables simplememnt indicandolo en el archivo docker-complose.yaml como variables de entorno:
+
+
+```yaml
+moodle:
+  ...
+  environment:
+    - MOODLE_USERNAME=diego
+    - MOODLE_PASSWORD=my_password
+  ...
+```
+
 Para los siguientes cambios debemos acceder al contenedor:
 
 ```console
