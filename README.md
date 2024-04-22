@@ -51,7 +51,7 @@ docker restart moodle-moodle-1
 ```
 
 Simplemente descargamos el archivo docker-compose.yaml a una carpeta llamada moodle y lo lanzamos
-```
+```console
 docker compose up -d
 ```
 
@@ -59,7 +59,7 @@ Para acceder a la aplicación:
 http://your-ip:8880
 
 Ejecuta la aplicación sin descargar nada simplemente usando este comando:
-```
+```console
 curl -sSL https://raw.githubusercontent.com/dgmx/DockerMoodle/main/docker-compose.yaml > docker-compose.yml
 docker-compose up -d
 ```
