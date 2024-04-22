@@ -98,7 +98,7 @@ docker-compose up -d
 
 ### Pendiente
 
-Configurar un Servidor STMP para notificaciones o recordar contraseñas
+Configurar un Servidor STMP con Gmail para notificaciones o recordar contraseñas
 
 * Modificacion en el archivo docker-compose.yml
 
