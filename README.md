@@ -34,7 +34,7 @@ moodle:
 ```
 
 
-## Otras consideraciones
+### Otras consideraciones
 
 ```diff
    moodle:
