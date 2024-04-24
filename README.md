@@ -32,8 +32,39 @@ moodle:
     - MOODLE_PASSWORD=my_password
   ...
 ```
+
+
+## Otras consideraciones
+
+```diff
+   moodle:
+     ports:
+-      - '80:8080'
+-      - '443:8443'
++      - '80:8880'
++      - '443:4443'
+     environment:
+       ...
++      - PHP_MEMORY_LIMIT=512m
+     ...
+```
+
+
+1. El puerto de acceso a Moodle es el 8880 (modificado 80 por defecto)
+2. Se ha expuesto el puerto de MariaDB al 3336 para poder acceder con DBeaver o el cliente MariaDB
+```console
+ mariadb  --protocol=tcp -u root -p -P 3336
+```
+### Puesta en marcha del Stack
+
+Simplemente descargamos el archivo docker-compose.yaml a una carpeta llamada moodle y lo lanzamos
+```console
+docker compose up -d
+```
+
+
 ### Modificaciones de las variables de configuración del Contenedor
-Para los siguientes cambios debemos acceder al contenedor:
+Para los siguientes cambios debemos acceder al contenedor una vez creado:
 
 ```console
 docker exec -i -t moodle-moodle-1 /bin/bash
@@ -68,35 +99,6 @@ nano /opt/bitnami/php/etc/php.ini
 Salimos del contenedor y lo reiniciamos:
 ```console
 docker restart moodle-moodle-1
-```
-
-
-## Otras consideraciones
-
-```diff
-   moodle:
-     ports:
--      - '80:8080'
--      - '443:8443'
-+      - '80:8880'
-+      - '443:4443'
-     environment:
-       ...
-+      - PHP_MEMORY_LIMIT=512m
-     ...
-```
-
-
-1. El puerto de acceso a Moodle es el 8880 (modificado 80 por defecto)
-2. Se ha expuesto el puerto de MariaDB al 3336 para poder acceder con DBeaver o el cliente MariaDB
-```console
- mariadb  --protocol=tcp -u root -p -P 3336
-```
-### Puesta en marcha del Stack
-
-Simplemente descargamos el archivo docker-compose.yaml a una carpeta llamada moodle y lo lanzamos
-```console
-docker compose up -d
 ```
 
 Para acceder a la aplicación:
